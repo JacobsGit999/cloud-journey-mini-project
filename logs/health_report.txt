@@ -1,0 +1,57 @@
+===== SERVER HEALTH REPORT =====
+
+DATE:
+Wed May 20 02:37:37 PM EAT 2026
+
+HOSTNAME:
+penguin
+
+IP ADDRESS:
+100.115.92.206 
+
+DISK USAGE:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdc         10G  2.0G  7.7G  21% /
+none            492K  4.0K  488K   1% /dev
+/dev/vdc         10G  2.0G  7.7G  21% /dev/kvm
+tmpfs           100K     0  100K   0% /dev/lxd
+run             3.2G   24K  3.2G   1% /dev/.cros_milestone
+9p              3.8G  1.7M  3.8G   1% /mnt/chromeos
+tmpfs           3.2G     0  3.2G   0% /mnt/external
+/dev/vdb         75M   74M     0 100% /opt/google/cros-containers
+fonts           3.4G  3.0G  339M  90% /usr/share/fonts/chromeos
+tmpfs           100K     0  100K   0% /dev/.lxd-mounts
+devtmpfs        3.2G     0  3.2G   0% /dev/tty
+tmpfs           3.2G     0  3.2G   0% /dev/shm
+tmpfs           1.3G  124K  1.3G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+tmpfs           647M   20K  647M   1% /run/user/1000
+
+MEMORY USAGE:
+               total        used        free      shared  buff/cache   available
+Mem:           6.3Gi        90Mi       5.1Gi       168Ki       1.1Gi       6.2Gi
+Swap:             0B          0B          0B
+
+TOP PROCESSES:
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+yacqub     220  0.0  0.3  46960 23676 ?        S    Apr30   0:00 /opt/google/cros-containers/bin/../lib/ld-linux-x86-64.so.2 --argv0 /opt/google/cros-containers/bin/Xwayland --library-path /opt/google/cros-containers/bin/../lib --inhibit-rpath  /opt/google/cros-containers/bin/Xwayland.elf :1 -nolisten tcp -rootless -shm -displayfd 22 -wm 23 -auth /home/yacqub/.Xauthority -fp /usr/share/fonts/X11/misc, /usr/share/fonts/X11/cyrillic, /usr/share/fonts/X11/100dpi/:unscaled, /usr/share/fonts/X11/75dpi/:unscaled, /usr/share/fonts/X11/Type1, /usr/share/fonts/X11/100dpi, /usr/share/fonts/X11/75dpi, built-ins
+yacqub     219  0.0  0.3  46960 23544 ?        S    Apr30   0:00 /opt/google/cros-containers/bin/../lib/ld-linux-x86-64.so.2 --argv0 /opt/google/cros-containers/bin/Xwayland --library-path /opt/google/cros-containers/bin/../lib --inhibit-rpath  /opt/google/cros-containers/bin/Xwayland.elf -nolisten tcp -rootless -shm -displayfd 22 -wm 23 -auth /home/yacqub/.Xauthority -fp /usr/share/fonts/X11/misc, /usr/share/fonts/X11/cyrillic, /usr/share/fonts/X11/100dpi/:unscaled, /usr/share/fonts/X11/75dpi/:unscaled, /usr/share/fonts/X11/Type1, /usr/share/fonts/X11/100dpi, /usr/share/fonts/X11/75dpi, built-ins
+Debian-+ 19541  0.0  0.2  30564 19020 ?        Ss   May12   0:10 /usr/sbin/exim4 -bd -q30m
+yacqub     270  0.1  0.2 1500500 18288 ?       Ssl  Apr30  37:36 /opt/google/cros-containers/bin/../lib/ld-linux-x86-64.so.2 --argv0 /opt/google/cros-containers/bin/garcon --library-path /opt/google/cros-containers/bin/../lib --inhibit-rpath  /opt/google/cros-containers/bin/garcon.elf --server
+yacqub     166  0.0  0.2 252688 14636 ?        Ssl  Apr30   0:00 /usr/bin/wireplumber
+root     26076  0.0  0.2  49360 13712 ?        Ss   May19   0:00 /lib/systemd/systemd-journald
+root         1  2.7  0.1 167892 12532 ?        Ss   Apr30 796:31 /sbin/init
+yacqub     160  0.0  0.1  44440 11792 ?        Ssl  Apr30   0:00 /usr/bin/pipewire
+yacqub     144  0.0  0.1  19700 11508 ?        Ss   Apr30   0:00 /lib/systemd/systemd --user
+
+NETWORK TEST:
+PING google.com (172.217.170.206) 56(84) bytes of data.
+64 bytes from mba01s10-in-f14.1e100.net (172.217.170.206): icmp_seq=1 ttl=110 time=68.2 ms
+64 bytes from mba01s10-in-f14.1e100.net (172.217.170.206): icmp_seq=2 ttl=110 time=68.1 ms
+64 bytes from mba01s10-in-f14.1e100.net (172.217.170.206): icmp_seq=3 ttl=110 time=68.3 ms
+64 bytes from mba01s10-in-f14.1e100.net (172.217.170.206): icmp_seq=4 ttl=110 time=67.6 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 67.605/68.053/68.327/0.270 ms
